@@ -1,0 +1,260 @@
+/*corpo da página*/
+body {
+    font-family: 'inter', sans-serif;
+
+}
+
+
+/*imagem de fundo contendo título principal e subtitulo*/
+#div-logo {
+    background-image: url("../img/fundo.svg");
+    max-width: 100%;
+    max-height: 100%;
+    min-width: auto;
+    min-height: auto;
+    margin-top: 0%;
+    height: 33em;
+}
+
+
+
+/*titulo principal da página*/
+#titulo {
+    color: #FFFFFF;
+    font-family: 'inter', sans-serif;
+    font-size: 50px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+
+    padding-top: 15%;
+    padding-left: 8%;
+
+
+}
+
+
+
+/*subtitulo principal da página*/
+#tagdesri {
+    color: #FFFFFF;
+    font-family: 'inter', sans-serif;
+    font-size: 20px;
+
+    margin-bottom: 40%;
+    padding-top: 1%;
+    padding-left: 8%;
+    padding-bottom: 40%;
+
+}
+
+
+
+/*div contando as imagens contendo os ids 'empreendimento, mercadoExperiencia e projtosconst'*/
+#cards {
+    max-width: 100%;
+    min-width: auto;
+    background-color: #F9F9F9;
+
+
+    align-items: center;
+    margin-top: 0%;
+    margin-bottom: 4%;
+    margin-left: 0%;
+    margin-right: 0%;
+
+    padding-left: 9%;
+    padding-top: 7%;
+    padding-bottom: 7%;
+
+    display: grid;
+    grid-auto-flow: column;
+
+
+}
+
+
+
+/*div contendo id="foto" e id='div-textotitulo' e titulotexto*/
+#textofoto {
+    max-width: 100%;
+    min-width: auto;
+}
+
+
+
+/*imagem da div id="foto"*/
+#foto>img {
+
+    border-width: 24%;
+    border-color: aqua;
+    margin-top: 4%;
+    margin-left: 60%;
+
+    margin-right: 1%;
+    margin-bottom: 0%;
+
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+
+
+/*titulo e texto da div id="textofoto "*/
+#div-textotitulo {
+    margin-left: 2%;
+    margin-right: 9%;
+    position: static;
+    align-items: flex-end;
+}
+
+
+
+
+/*h2 da div-textotitulo*/
+#titulotexto {
+    max-width: 100%;
+    min-width: 10%;
+    position: relative;
+    flex-direction: ;
+    font-family: 'inter', sans-serif;
+    font-size: 203%;
+
+    margin-top: -29%;
+    margin-left: 6%;
+
+
+    padding-top: -6%;
+    padding-bottom: 0%;
+}
+
+
+/*texto da div-titulotexto*/
+#texto {
+
+
+    font-family: 'inter', sans-serif;
+    font-size: 133%;
+
+    margin-top: 3%;
+    margin-left: 5%;
+
+    padding-left: 1%;
+
+
+}
+
+
+/*class contendo o formulário e seu título*/
+.formula {
+    background-color: #303030;
+
+
+}
+
+/*titulo do formulário*/
+#tituloformu {
+    font-size: 2.1em;
+    color: #FFFFFF;
+
+    margin-top: 24%;
+
+    margin-left: 23%;
+    margin-right: 7%;
+    margin-bottom: -3%;
+
+    padding-top: 10%;
+    padding-bottom: -29%;
+    padding-left: 3%;
+    padding-right: 10%;
+
+
+}
+
+
+/*form => (id="formulario") id do formulário */
+#formulario {
+    margin-top: 4%;
+
+    margin-left: 7%;
+    margin-right: 34%;
+
+
+    align-items: center;
+}
+
+
+
+/*entrada de dados do formulário*/
+input {
+    cursor: pointer;
+
+    border-radius: 9px;
+    width: 480px;
+    height: 70px;
+    text-align: justify;
+    margin-top: 4%;
+    margin-left: 39%;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px;
+}
+
+
+/*dar uma sombreamento ao input quando passa o mouse.*/
+input:hover {
+    box-shadow: 3px 0px 6px 6px #686464;
+}
+
+
+/*input para envio do nome do usuário*/
+#nome {
+
+    padding-left: 2%;
+    font-size: 16px;
+}
+
+
+/*aumenta o texto quando dita no input nome*/
+#nome:focus {
+    font-size: 27px;
+}
+
+
+/*input para envio do email do usuário*/
+#email {
+    padding-left: 2%;
+    font-size: 16px;
+}
+
+
+/*aumenta o texto quando dita no input email*/
+#email:focus {
+    font-size: 27px;
+}
+
+
+
+/*botao para envio do formulário*/
+#botao {
+    cursor: pointer;
+    font-size: 17PX;
+    background-color: #C07212;
+
+    border-radius: 9px;
+
+    width: 286px;
+    height: 74px;
+    margin-top: 3%;
+    margin-left: 52%;
+
+    margin-bottom: 8%;
+
+    padding-bottom: -10%;
+}
+
+
+/*sobreamento ao passar o mouse sobre o botão*/
+#botao:hover {
+    box-shadow: 3px 4px 6px 6px #686464;
+}
