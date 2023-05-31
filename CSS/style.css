@@ -14,9 +14,35 @@ body {
     min-height: auto;
     margin-top: 0%;
     height: 33em;
+    animation-name: div-logo;
+    animation-duration: 1s ;
+    
+}
+
+@keyframes div-logo{
+
+    0%{
+        transform: scale(0.5, 0.5);
+        animation: ;
+        -webkit-animation:;
+        -webkit-transform:;
+        -moz-transform:;
+        -ms-transform:;
+        -o-transform:;
 }
 
 
+10%{
+    transform: scale(0.2, 0.5);
+    animation: ;
+    -webkit-animation:;
+    -webkit-transform: scale(0.2, 0.5);
+    -moz-transform: scale(0.2, 0.5);
+    -ms-transform: scale(0.2, 0.5);
+    -o-transform: scale(0.2, 0.5);
+}
+
+}
 
 /*titulo principal da página*/
 #titulo {
@@ -25,32 +51,57 @@ body {
     font-size: 50px;
     margin-top: 0%;
     margin-bottom: 0%;
-
     padding-top: 15%;
     padding-left: 8%;
-
-
+    animation: titulo ;
+    -webkit-animation: titulo ;
+    animation-duration: 3s;
 }
 
+@keyframes titulo{
+    0%{
+        transform: scaleY(0.5);
+        
+    }
 
+10%{
+    transform: scaley( -1);
+    -webkit-animation:;
+    -webkit-transform: scaley( -1);
+    -moz-transform: scaley( -1);
+    -ms-transform: scaley( -1);
+    -o-transform: scaley( -1);
+}
 
+}
 /*subtitulo principal da página*/
 #tagdesri {
     color: #FFFFFF;
     font-family: 'inter', sans-serif;
     font-size: 20px;
-
     margin-bottom: 40%;
     padding-top: 1%;
     padding-left: 8%;
     padding-bottom: 40%;
+    animation-name: tagdesri;
+    animation-duration: 3s;
+   
+}
 
+@keyframes tagdesri{
+0%{
+    transform: scaleY(0.5);
+    
+}
+
+10%{ transform: scaley(-1); -webkit-transform: scaley(-1); -moz-transform: scaley(-1); -ms-transform: scaley(-1); -o-transform: scaley(-1);
+}
 }
 
 
-
 /*div contando as imagens contendo os ids 'empreendimento, mercadoExperiencia e projtosconst'*/
-#cards {
+#cards {clear: both;
+   
     max-width: 100%;
     min-width: auto;
     background-color: #F9F9F9;
@@ -76,21 +127,28 @@ body {
 
 /*div contendo id="foto" e id='div-textotitulo' e titulotexto*/
 #textofoto {
+    display: grid
+;
+  clear: both;
     max-width: 100%;
     min-width: auto;
+grid-auto-flow:dense;
 }
 
 
 
 /*imagem da div id="foto"*/
 #foto>img {
-
+    grid-auto-flow: row;
+clear: both;
+display: grid ;
+text-align: right;
     border-width: 24%;
     border-color: aqua;
     margin-top: 4%;
     margin-left: 60%;
 
-    margin-right: 1%;
+    margin-right: 3%;
     margin-bottom: 0%;
 
     padding-left: 1%;
@@ -101,17 +159,28 @@ body {
 
 /*titulo e texto da div id="textofoto "*/
 #div-textotitulo {
-    margin-left: 2%;
+   clear: both; 
+    display: grid;
+ text-align: left;
+    margin-top: -30%;
+    margin-left: -55%;
     margin-right: 9%;
+    margin-bottom: -2%;
     position: static;
     align-items: flex-end;
+    padding-top: -15%;
+    padding-bottom: 7%;
 }
 
 
 
 
 /*h2 da div-textotitulo*/
-#titulotexto {
+#titulotexto {z-index: 1;
+   text-align: left;
+    clear: both;
+    display: grid;
+
     max-width: 100%;
     min-width: 10%;
     position: relative;
@@ -119,25 +188,28 @@ body {
     font-family: 'inter', sans-serif;
     font-size: 203%;
 
-    margin-top: -29%;
-    margin-left: 6%;
+    margin-top: -17%;
+    margin-left: 42%;
 
 
-    padding-top: -6%;
-    padding-bottom: 0%;
+    padding-top: 10%;
+    padding-bottom: 4%;
 }
 
 
 /*texto da div-titulotexto*/
 #texto {
+    clear: both;
+    z-index: 1;
+    display: grid;
 
 
     font-family: 'inter', sans-serif;
     font-size: 133%;
 
-    margin-top: 3%;
-    margin-left: 5%;
-
+    margin-top: -6%;
+    margin-left: 41%;
+    margin-bottom: 6%;
     padding-left: 1%;
 
 
@@ -187,17 +259,16 @@ body {
 /*entrada de dados do formulário*/
 input {
     cursor: pointer;
-
-    border-radius: 9px;
-    width: 480px;
-    height: 70px;
+    border-radius:9%;
+    width: 56%;
+    height: 50%;
     text-align: justify;
     margin-top: 4%;
     margin-left: 39%;
-    -webkit-border-radius: 9px;
-    -moz-border-radius: 9px;
-    -ms-border-radius: 9px;
-    -o-border-radius: 9px;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
 }
 
 
@@ -211,7 +282,7 @@ input:hover {
 #nome {
 
     padding-left: 2%;
-    font-size: 16px;
+    font-size: 2.3em;
 }
 
 
@@ -224,7 +295,7 @@ input:hover {
 /*input para envio do email do usuário*/
 #email {
     padding-left: 2%;
-    font-size: 16px;
+    font-size: 2.3em;
 }
 
 
@@ -243,10 +314,10 @@ input:hover {
 
     border-radius: 9px;
 
-    width: 286px;
+    width: 50%;
     height: 74px;
     margin-top: 3%;
-    margin-left: 52%;
+    margin-left: 43%;
 
     margin-bottom: 8%;
 
